@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(234, 223, 243);
+}
+
+nav a {
+    color: white !important;
+}
+
+nav a:hover {
+    background-color: blueviolet;
+}
+
+nav button {
+    outline: blueviolet !important;
+    border-color: blueviolet !important;
+    color: blueviolet !important;
+}
+
+nav button:hover {
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+/* .btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0d6efd;
+    --bs-btn-active-border-color: #0d6efd;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
+} */
+
+nav input:focus {
+    border-color: blueviolet !important;
+    box-shadow: 0 0 0 0.05rem blueviolet !important;
+}
+
+.container {
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+}
+
+.product {
+    /* background-color:  */
+    /* crimson; */
+    /* color: #fff; */
+    display: grid;
+    place-content: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.product:hover {
+    background-color:
+        blueviolet;
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container {
+        padding: 1rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        padding: 1rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns:
+            repeat(1, 1fr);
+
+    }
+}
